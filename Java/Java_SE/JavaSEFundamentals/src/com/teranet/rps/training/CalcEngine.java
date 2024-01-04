@@ -7,6 +7,14 @@ public class CalcEngine {
         double[] leftValues={100.d,44.5d,22.2d,66.8,67.5};
         double[] rightValues={50.0d,93.2d,22.6d,99.8,45.6};
         char[] opCodes = {'d','m','a','s'};
+        double[] results = executeCalculate(opCodes,leftValues,rightValues);
+        //Arrays.stream(results).sequential().forEach(item->System.out.println(item));
+        for(double item: results){
+            System.out.println(item);
+        }
+        //System.out.println("Results:"+results);
+    }
+    static double[] executeCalculate(char[] opCodes,double[] leftValues,double[] rightValues){
         double[] results = new double[opCodes.length];
         for(int index=0;index<opCodes.length;index++){
             switch(opCodes[index]){
@@ -28,11 +36,7 @@ public class CalcEngine {
                     break;
             }
         }
-        //Arrays.stream(results).sequential().forEach(item->System.out.println(item));
-        for(double item: results){
-            System.out.println(item);
-        }
-        //System.out.println("Results:"+results);
+        return results;
     }
 
 

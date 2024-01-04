@@ -1,0 +1,11 @@
+
+c
+java:S1854"ARemove this useless assignment to local variable "myLatestValue".(Í±´Âùÿÿÿÿ8‘¨“ Í1
+F	java:S106"+Replace this use of System.out by a logger.(„©†8’¨“ Í1
+L	java:S106"+Replace this use of System.out by a logger.(ýÂ™þúÿÿÿÿ8“¨“ Í1
+L	java:S106"+Replace this use of System.out by a logger.(®ýáëûÿÿÿÿ8“¨“ Í1
+T
+java:S1481"2Remove this unused "myLatestValue" local variable.(Í±´Âùÿÿÿÿ8“¨“ Í1
+G	java:S106"+Replace this use of System.out by a logger.(À…Óð8Ã´™ Í1
+L	java:S106"+Replace this use of System.out by a logger.(òœ²ûûÿÿÿÿ8Úô™ Í1
+F	java:S106"+Replace this use of System.out by a logger.(ø¸ä8®²› Í1

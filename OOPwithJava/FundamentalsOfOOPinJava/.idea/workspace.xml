@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e016ec5c-87ed-457e-97af-e05569e7f5eb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Java/Java_SE/JavaSEFundamentals/.idea/sonarlint/issuestore/f/0/f090f58333650bc7b092a9a066e059b174c55e19" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/Java_SE/JavaSEFundamentals/.idea/sonarlint/issuestore/f/0/f090f58333650bc7b092a9a066e059b174c55e19" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/Java_SE/JavaSEFundamentals/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/Java_SE/JavaSEFundamentals/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/Java_SE/JavaSEFundamentals/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/Java_SE/JavaSEFundamentals/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/Java_SE/JavaSEFundamentals/src/com/teranet/rps/training/MyWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/Java_SE/JavaSEFundamentals/src/com/teranet/rps/training/MyWorker.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2ao4HNCYzxb8RoCt4IWuaGOglOO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e016ec5c-87ed-457e-97af-e05569e7f5eb" name="Changes" comment="" />
+      <created>1704971512346</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704971512346</updated>
+    </task>
+    <servers />
+  </component>
+</project>

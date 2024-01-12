@@ -1,6 +1,6 @@
 package models;
 
-public class Product {
+public abstract class Product implements Comparable<Product>{
     private final String itemName;
     private int price;
     private int discount;
@@ -53,4 +53,5 @@ public class Product {
     public int getDiscountedPrice(){
         return this.discount!=0 ? this.getSellingPrice() : this.price;
     }
+    public abstract int calculateShippingCost();
 }

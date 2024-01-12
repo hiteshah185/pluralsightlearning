@@ -16,6 +16,9 @@ public class ShoppingCart {
     public void addLineItem(LineItem lineItem){
         lineItems.add(lineItem);
     }
+    public void addLineItem(Product product, int quantity){
+        this.addLineItem(new LineItem(product,quantity));
+    }
 
 /*    public Order checkOut(Customer customer){
         Payment payment = new Payment();

@@ -12,6 +12,9 @@ public class LineItem {
     public Product getProduct() {
         return product;
     }
+    public int getPrice(){
+        return product.getSellingPrice()*quantity;
+    }
 
     public void setProduct(Product product) {
         this.product = product;

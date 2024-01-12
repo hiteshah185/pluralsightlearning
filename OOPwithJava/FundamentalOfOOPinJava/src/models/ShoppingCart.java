@@ -13,11 +13,14 @@ public class ShoppingCart {
     public void setLineItems(List<LineItem> lineItems) {
         this.lineItems = lineItems;
     }
+    public void addLineItem(LineItem lineItem){
+        lineItems.add(lineItem);
+    }
 
-    public Order checkOut(Customer customer){
+/*    public Order checkOut(Customer customer){
         Payment payment = new Payment();
         return new Order(customer,this,payment);
-    }
+    }*/
 
     public int getTotalCost() {
         return lineItems.stream()

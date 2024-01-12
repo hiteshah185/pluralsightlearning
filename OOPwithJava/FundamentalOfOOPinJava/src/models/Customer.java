@@ -7,13 +7,22 @@ public class Customer {
     private final String name;
     private  CreditCard creditCard;
 
-    public Customer(String name, CreditCard creditCard) {
+    public Customer(String name, long creditCard) {
         this.name = name;
-        this.creditCard = creditCard;
+        this.creditCard = new CreditCard(creditCard);
     }
 
-    public Optional<Order> checkout(ShoppingCart cart) {
-        Optional<Payment> payment = creditCard.makePayment(cart.getTotalCost());
-        return payment.map(p -> new Order(this, cart, p));
+    public Order checkout(ShoppingCart cart) {
+        Payment payment = creditCard.makePayment(cart.getTotalCost());
+        return new Order(this,cart,payment);
+
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "name='" + name + '\'' +
+                ", creditCard=" + creditCard +
+                '}';
     }
 }

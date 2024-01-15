@@ -19,3 +19,17 @@ H
 src/models/Customer.java,9\e\9e3a483584b4ef41fd4e403492cec9210b794ea1
 L
 src/models/ShoppingCart.java,e\3\e3bafa1c2e71be75f748da9b274fe1e212721728
+E
+src/DemoOrdering.java,2\5\259983cf5f2f7dd7e7a049be7d52baf4083251c0
+M
+src/models/PaymentMethod.java,1\5\15a2d21f90eba274ff62df94a165a819c730b9c8
+K
+src/models/PaymentIntf.java,c\8\c820486230fd01c892e646c2b284c986a0a6b5d4
+O
+src/models/PhysicalProduct.java,9\9\99bd37a33bd8e400f6a35a272a4aee2b35056bf0
+N
+src/models/DigitalProduct.java,7\0\706e1e49a5674fef5806ade806ddedcc7f468a46
+K
+src/models/BankAccount.java,3\c\3ccd5425b9a391fbac5463407d26a2cdc0236f00
+Q
+!src/models/ReversiblePayment.java,2\3\234bcf274aa20b0460c60476923180dab24765ac

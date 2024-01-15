@@ -13,7 +13,7 @@ public class Customer {
     }
 
     public Order checkout(ShoppingCart cart) {
-        Payment payment = creditCard.makePayment(cart.getTotalCost());
+        Payment payment = creditCard.mkePayment(cart.getTotalCost());
         return new Order(this,cart,payment);
 
     }

@@ -1,11 +1,4 @@
 
-I
-java:S1068",Remove this unused "itemName" private field.(é»»¸8¾ƒ—ÄÏ1
-E
-java:S1068")Remove this unused "price" private field.(ˆÑ€(8’ªöÃÏ1
-N
-java:S1068",Remove this unused "discount" private field.(ÆèŒ…úÿÿÿÿ8®÷ÃÏ1
-J
-java:S1068"(Remove this unused "type" private field.(£§äıÿÿÿÿ8®·–ÄÏ1
-L
-java:S1068"*Remove this unused "weight" private field.(Ïã úûÿÿÿÿ8¯·–ÄÏ1
+V
+java:S5993
+"9Change the visibility of this constructor to "protected".(ªû×8›‰çãÏ1

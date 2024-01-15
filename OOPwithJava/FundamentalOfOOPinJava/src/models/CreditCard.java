@@ -1,13 +1,15 @@
 package models;
 
+import java.util.Optional;
 import java.util.UUID;
 
-public class CreditCard {
+public class CreditCard implements PaymentMethod{
     private final long cardNumber;
     CreditCard(long cardNumber){
         this.cardNumber=cardNumber;
     }
-    public Payment makePayment(int value){
+    @Override
+    public Payment mkePayment(int value){
         if(Math.random()>0.3){
             return new Payment(this,value, UUID.randomUUID());
         }else{
@@ -21,4 +23,6 @@ public class CreditCard {
                 "cardNumber=" + cardNumber +
                 '}';
     }
+
+
 }

@@ -1,0 +1,25 @@
+
+{
+java:S1488!"^Immediately return this expression instead of assigning it to the temporary variable "opCode".(‚æ†8¾×¼ÃÍ1
+^
+java:S1854
+"ARemove this useless assignment to local variable "operationCode".(Çğ‘8Ó×¼ÃÍ1
+L	java:S106"+Replace this use of System.out by a logger.(Š„ˆñşÿÿÿÿ8Ô×¼ÃÍ1
+O
+java:S1481
+"2Remove this unused "operationCode" local variable.(Çğ‘8Õ×¼ÃÍ1
+G	java:S106"+Replace this use of System.out by a logger.(Ù¯8Õ×¼ÃÍ1
+L	java:S106"+Replace this use of System.out by a logger.(šªãüÿÿÿÿ8Ö×¼ÃÍ1
+`
+java:S1854">Remove this useless assignment to local variable "rightValue".(ÙÂÍÎüÿÿÿÿ8Û×¼ÃÍ1
+_
+java:S1854"=Remove this useless assignment to local variable "leftValue".(”©–‹ùÿÿÿÿ8Û×¼ÃÍ1
+W
+java:S1854":Remove this useless assignment to local variable "opCode".(ˆè¶›8Û×¼ÃÍ1
+H
+java:S1481"+Remove this unused "opCode" local variable.(ˆè¶›8Ü×¼ÃÍ1
+P
+java:S1481".Remove this unused "leftValue" local variable.(”©–‹ùÿÿÿÿ8Ü×¼ÃÍ1
+Q
+java:S1481"/Remove this unused "rightValue" local variable.(ÙÂÍÎüÿÿÿÿ8İ×¼ÃÍ1
+L	java:S106"+Replace this use of System.out by a logger.(òşÚúøÿÿÿÿ8İ×¼ÃÍ1

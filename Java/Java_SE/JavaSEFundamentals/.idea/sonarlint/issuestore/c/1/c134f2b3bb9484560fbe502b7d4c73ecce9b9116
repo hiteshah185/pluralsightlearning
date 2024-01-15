@@ -1,0 +1,15 @@
+
+
+java:S1186j"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ú‚êê8ùŸğÍÍ1
+
+java:S1186m"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÂÉš8úŸğÍÍ1
+
+java:S1186p"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¢óù€8úŸğÍÍ1
+]	java:S107"AConstructor has 8 parameters, which is greater than 7 authorized.(Õ²ËŞ8ıŸğÍÍ1
+G	java:S106d"+Replace this use of System.out by a logger.(ğûòñ8… ğÍÍ1
+I
+java:S1144j",Remove this unused private "takeOff" method.(Ú‚êê8‡ ğÍÍ1
+E
+java:S1144m"(Remove this unused private "fly" method.(ÂÉš8‡ ğÍÍ1
+F
+java:S1144p")Remove this unused private "land" method.(¢óù€8‡ ğÍÍ1

@@ -1,4 +1,7 @@
 package com.teranet.rps.learningcollections.models;
+
+import java.util.Comparator;
+
 //Contains flipkart product definition
 public class FlipkartProduct {
     private final String productName;
@@ -22,4 +25,6 @@ public class FlipkartProduct {
     public double getPrice() {
         return price;
     }
+    public static final Comparator<FlipkartProduct> BY_WEIGHT =
+            Comparator.comparingInt(FlipkartProduct::getWeight);
 }

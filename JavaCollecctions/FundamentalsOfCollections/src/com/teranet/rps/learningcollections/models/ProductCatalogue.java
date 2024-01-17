@@ -12,6 +12,6 @@ public class ProductCatalogue implements Iterable<FlipkartProduct>{
     }
     @Override
     public Iterator<FlipkartProduct> iterator() {
-        return null;
+        return products.iterator();
     }
 }

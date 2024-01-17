@@ -1,6 +1,7 @@
 package com.teranet.rps.learningcollections.models;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
@@ -27,8 +28,8 @@ public class Shipment implements Iterable<FlipkartProduct> {
     public void prepare(){
         products.sort(FlipkartProduct.BY_WEIGHT);
         int splitPoint =findSplitPoint();
-            lightProducts = products.subList(0,splitPoint);
-        heavyProducts = products.subList(splitPoint,products.size());
+        lightProducts = Collections.unmodifiableList(products.subList(0,splitPoint));
+        heavyProducts = Collections.unmodifiableList(products.subList(splitPoint,products.size()));
     }
 
     private int findSplitPoint(){

@@ -29,6 +29,6 @@ public class UnmodifiableVsImmutable {
             System.out.println("Country:"+c+":"+p);
         });
 
-
+        var countryToPop = Map.of("UK",67,"USA","328");
     }
 }

@@ -13,13 +13,13 @@ public class FunctionalInterfacesExample02 {
     public static void main(String[] args) {
         List<Employee> employees = SampleData.getEmployees();
         Map<Department,List<Employee>> EmployeeByDepartment = new HashMap<>();
-        for(Employee employee:employees){
+    /*    for(Employee employee:employees){
             Department department = employee.getDepartment();
             if(!EmployeeByDepartment.containsKey(department)){
                 EmployeeByDepartment.put(department,new ArrayList<>());
             }
             EmployeeByDepartment.get(department).add(employee);
-        }
+        }*/
         for(Employee employee:employees){
             Department department = employee.getDepartment();
             EmployeeByDepartment.computeIfAbsent(department,dep->new ArrayList<>()).add(employee);

@@ -28,5 +28,6 @@ public class AdvancedStreamsExample03 {
                         ArrayList::addAll
                 );
         System.out.println(namesOfEmployee);
+
     }
 }

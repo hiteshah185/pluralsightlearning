@@ -34,7 +34,7 @@ public class LambdaExample02 {
                 });
 
     }
-    static void printEmployee(List<Employee> employees, BigDecimal yearOfExperience){
+    public static void printEmployee(List<Employee> employees, BigDecimal yearOfExperience){
         for(Employee employee: employees){
             if(employee.getYearOfExperience().compareTo(yearOfExperience)<0){
                 System.out.println(employee.getName());

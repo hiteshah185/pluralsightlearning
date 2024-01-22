@@ -17,6 +17,9 @@ public class Main {
         } catch (Exception e) {
             System.out.println("Unexpected error: " + e.getMessage());
             e.printStackTrace();
+            if(e.getCause()!=null){
+                System.out.println("Cause:"+e.getCause());
+            }
         }finally {
             System.out.println("First try-catch Block:");
         }

@@ -17,14 +17,28 @@ public class Main {
         } catch (Exception e) {
             System.out.println("Unexpected error: " + e.getMessage());
             e.printStackTrace();
+        }finally {
+            System.out.println("First try-catch Block:");
         }
         try {
+            BufferedReader reader = new BufferedReader(new FileReader(args[0]));
+            String inputLine = null;
+            while((inputLine=reader.readLine())!=null){
+                performOperation(inputLine);
+            }
             int i=2;
             int j=2;
             int result =i/(j-2);
         }catch (Exception e){
             System.out.println("Error for Division by zero:"+e.getMessage());
             e.printStackTrace();
+        }finally {
+            try{
+                //reader.close();
+                System.out.println("Closing Finally:"+args[0]);
+            }catch (Exception ex){
+                System.out.println("Error for closing reader.");
+            }
         }
     }
 

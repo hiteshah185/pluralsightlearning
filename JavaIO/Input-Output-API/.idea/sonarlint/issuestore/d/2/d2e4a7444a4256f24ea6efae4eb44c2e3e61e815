@@ -1,0 +1,19 @@
+
+O
+java:S1854":Remove this useless assignment to local variable "newDir".(ž§¦j
+E	java:S106	"+Replace this use of System.out by a logger.(Ä“¬ˆÿÿÿÿÿ
+E	java:S106
+"+Replace this use of System.out by a logger.(Þ”¬Éûÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(ŽÅƒáüÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(Ó§³òýÿÿÿÿ
+@
+java:S1481"+Remove this unused "newDir" local variable.(ž§¦j
+V	java:S125"<This block of commented-out lines of code should be removed.(€ãö©þÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áþÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(ÃŒÉÿÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(¥þñ™øÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(ÎåÇ™
+E	java:S106"+Replace this use of System.out by a logger.(Úõ¸Óüÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áþÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(š…ýõ
+@	java:S106"+Replace this use of System.out by a logger.(¿ÌÆÓ

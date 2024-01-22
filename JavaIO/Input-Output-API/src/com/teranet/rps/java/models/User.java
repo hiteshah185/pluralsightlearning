@@ -1,9 +1,12 @@
 package com.teranet.rps.java.models;
 
+import java.io.Serial;
 import java.io.Serializable;
 
 public class User implements Serializable {
-    private static final long serialVersionUID = 567890;
+
+    @Serial
+    private static final long serialVersionUID = 2311449965967931540L;
     private  String firstName;
     private int age;
 

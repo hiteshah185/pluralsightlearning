@@ -66,6 +66,9 @@ public class Main {
                 result = leftVal * rightVal;
                 break;
             case DIVIDE:
+                if(rightVal ==0 ){
+                    throw new IllegalArgumentException("Zero rightVal not permitted.");
+                }
                 result = leftVal / rightVal;
                 break;
         }

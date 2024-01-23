@@ -48,4 +48,16 @@ public class CollegeTest {
         assertEquals(12,computerDepartment.getFacultyStrength());
         assertEquals(8,newCollege.getTotalFaculty());
     }
+
+    @Test
+    public void canStartTwoDepartments(){
+        College myNewCollege = new College();
+        myNewCollege.addMoreFaculty(50);
+        myNewCollege.addMoreStudents(180);
+
+        Engineering ECEDept =  myNewCollege.startAcademicYear(EngineeringType.ELECTRONICS);
+        Engineering CivilDept = myNewCollege.startAcademicYear(EngineeringType.CIVIL);
+        assertEquals(17,myNewCollege.getTotalFaculty());
+        assertEquals(20,myNewCollege.getTotalStudents());
+    }
 }

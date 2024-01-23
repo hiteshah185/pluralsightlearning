@@ -1,9 +1,17 @@
-package com.teranet.rps.training.Operations;
+package com.teranet.rps.training.operations;
 
 public class LeapYear {
         private static final int LEAP_YEAR_BASE_DIVISOR = 4;
         private static final int CENTURY_YEAR_DIVISOR = 100;
         private static final int FOUR_CENTURY_YEAR_DIVISOR = 400;
+        public static boolean isLeapYear2(final int year) {
+        return isDivisible(year, 4)
+                && (!isDivisible(year, 100) || isDivisible(year, 400));
+        }
+
+        private static boolean isDivisible(final int year, final int denominator) {
+        return year % denominator == 0;
+        }
 
         public boolean isLeapYear(final int year) {
             return isDivisibleBy(year, LEAP_YEAR_BASE_DIVISOR)

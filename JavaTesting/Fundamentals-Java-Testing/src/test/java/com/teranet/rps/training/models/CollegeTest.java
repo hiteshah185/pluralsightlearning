@@ -1,9 +1,9 @@
 package com.teranet.rps.training.models;
 
-import org.apache.maven.surefire.shared.lang3.builder.ToStringExclude;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class CollegeTest {
     @Test
@@ -59,5 +59,13 @@ public class CollegeTest {
         Engineering CivilDept = myNewCollege.startAcademicYear(EngineeringType.CIVIL);
         assertEquals(17,myNewCollege.getTotalFaculty());
         assertEquals(20,myNewCollege.getTotalStudents());
+    }
+
+    @Test
+    public void aTestThatThrowsIllegalArgument(){
+        College illegalCollege = new College();
+
+        assertThrows(IllegalArgumentException.class,
+                ()->illegalCollege.addMoreStudents(-1));
     }
 }

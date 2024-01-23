@@ -68,4 +68,14 @@ public class CollegeTest {
         assertThrows(IllegalArgumentException.class,
                 ()->illegalCollege.addMoreStudents(-1));
     }
+    @Test
+    public void aTestThatThrowIllegalState(){
+        College illegalStateCollege = new College();
+        illegalStateCollege.addMoreStudents(10);
+
+        assertThrows(IllegalStateException.class,
+                ()->{
+            illegalStateCollege.startAcademicYear(EngineeringType.CHEMICAL);
+                },"Illegal State to start an academic year");
+    }
 }

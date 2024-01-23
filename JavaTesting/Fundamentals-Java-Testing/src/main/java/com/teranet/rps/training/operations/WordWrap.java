@@ -1,15 +1,15 @@
-package com.teranet.rps.training.Operations;
+package com.teranet.rps.training.operations;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class WordWrap {
-    public String wrap(String text, int maxLineLength) {
+    public static String wrap(String text, int maxLineLength) {
         List<String> lines = splitIntoLines(text, maxLineLength);
         return joinLines(lines);
     }
 
-    private List<String> splitIntoLines(String text, int maxLineLength) {
+    private static List<String> splitIntoLines(String text, int maxLineLength) {
         List<String> lines = new ArrayList<>();
         int currentLineLength = 0;
         StringBuilder currentLine = new StringBuilder();
@@ -31,7 +31,7 @@ public class WordWrap {
         return lines;
     }
 
-    private String joinLines(List<String> lines) {
+    private static String joinLines(List<String> lines) {
         return String.join("\n", lines);
     }
 }

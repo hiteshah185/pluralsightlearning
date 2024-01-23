@@ -9,10 +9,10 @@ public class College {
 
     public Engineering startAcademicYear(EngineeringType engineeringType,int totalPeople){
         checkIfPositive(totalPeople);
-        int requiredStudents = engineeringType.getRequiredStudents();
-        int requiredFaculty = engineeringType.getRequiredFaculty();
+        int requiredStudents = engineeringType.getRequiredStudents()*totalPeople;
+        int requiredFaculty = engineeringType.getRequiredFaculty()*totalPeople;
         if(requiredFaculty>totalFaculty || requiredStudents > totalStudents){
-            throw new IllegalArgumentException();
+            throw new IllegalStateException();
         }
         totalStudents-=requiredStudents;
         totalFaculty-=requiredFaculty;

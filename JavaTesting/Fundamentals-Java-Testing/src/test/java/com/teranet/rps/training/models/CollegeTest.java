@@ -23,4 +23,16 @@ public class CollegeTest {
 
     }
 
+    @Test
+    public void startAcademicYearInCollege(){
+        College keralaTechCollege = new College();
+        keralaTechCollege.addMoreStudents(55);
+        keralaTechCollege.addMoreFaculty(30);
+
+        keralaTechCollege.startAcademicYear(EngineeringType.BIOMEDICAL);
+
+
+        assertEquals(5,keralaTechCollege.getTotalStudents());
+
+    }
 }

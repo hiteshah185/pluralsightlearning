@@ -35,4 +35,17 @@ public class CollegeTest {
         assertEquals(5,keralaTechCollege.getTotalStudents());
 
     }
+
+    @Test
+    public void canStartComputerDepartment(){
+        College newCollege = new College();
+        newCollege.addMoreFaculty(20);
+        newCollege.addMoreStudents(100);
+
+        Engineering computerDepartment = newCollege.startAcademicYear(EngineeringType.COMPUTER);
+
+        assertEquals(EngineeringType.COMPUTER, computerDepartment.getEngineeringType());
+        assertEquals(12,computerDepartment.getFacultyStrength());
+        assertEquals(8,newCollege.getTotalFaculty());
+    }
 }

@@ -2,10 +2,7 @@ package com.teranet.rps.training.music;
 
 import com.teranet.rps.training.music.database.MusicRecord;
 import com.teranet.rps.training.music.database.MusicSource;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Nested;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +26,7 @@ public class MusicServiceTest implements MusicSource {
     @DisplayName("Throws an illegal argument")
     class ThrowsExceptionTests{
         @Test
+        @Tag("nested")
         @DisplayName("When passed a blank string")
         void throwsExceptionOnBlank(){
             Exception thrown = assertThrows(IllegalArgumentException.class,
@@ -36,6 +34,7 @@ public class MusicServiceTest implements MusicSource {
             System.out.println(thrown.getMessage());
         }
         @Test
+        @Tag("nested")
         @DisplayName("When passed a Empty string")
         void throwsExceptionOnEmpty(){
             Exception thrown = assertThrows(IllegalArgumentException.class,

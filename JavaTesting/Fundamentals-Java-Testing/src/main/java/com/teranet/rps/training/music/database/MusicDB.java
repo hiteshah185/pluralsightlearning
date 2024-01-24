@@ -13,7 +13,7 @@ public class MusicDB implements MusicSource{
         musicList.add(new MusicRecord("Rock Anthems: The Classics", new int[]{1985, 1992, 2001}, 98)); // Rock
         musicList.add(new MusicRecord("Jazz Improvisations", new int[]{2024}, 45)); // Jazz
         musicList.add(new MusicRecord("Country Road Trip", new int[]{2023, 2024}, 68)); // Country
-        musicList.add(new MusicRecord("Global Grooves", new int[]{2024}, 25)); // World Music
+        musicList.add(new MusicRecord("Global Grooves", new int[]{2024}, 0)); // World Music
         musicList.add(new MusicRecord("Pop Sensations", new int[]{2024}, 92)); // Pop
         musicList.add(new MusicRecord("Orchestral Masterpieces", new int[]{2020, 2024}, 57)); // Classical
         musicList.add(new MusicRecord("Hip Hop Evolution", new int[]{2023, 2024}, 89)); // Hip Hop

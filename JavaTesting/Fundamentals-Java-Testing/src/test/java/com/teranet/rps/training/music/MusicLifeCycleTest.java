@@ -1,2 +1,4 @@
-package com.teranet.rps.training.music;public class MusicLifeCycleTest {
+package com.teranet.rps.training.music;
+
+public class MusicLifeCycleTest {
 }

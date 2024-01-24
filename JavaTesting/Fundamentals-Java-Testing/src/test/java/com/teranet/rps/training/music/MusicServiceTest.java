@@ -35,6 +35,13 @@ public class MusicServiceTest implements MusicSource {
                     ()->musicService.findMusicStartingWith(" "));
             System.out.println(thrown.getMessage());
         }
+        @Test
+        @DisplayName("When passed a Empty string")
+        void throwsExceptionOnEmpty(){
+            Exception thrown = assertThrows(IllegalArgumentException.class,
+                    ()->musicService.findMusicStartingWith(""));
+            System.out.println(thrown.getMessage());
+        }
     }
 
 

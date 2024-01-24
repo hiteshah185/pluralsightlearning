@@ -1,5 +1,8 @@
 package com.teranet.rps.training.music;
 
+import java.sql.Array;
+import java.util.Arrays;
+
 public enum MusicClassification {
     IDIOPHONES(101," Instruments that create sound through vibrating themselves."),
     MEMBRANOPHONES(102,"Instruments that produce sound by vibrating a membrane."),
@@ -11,5 +14,18 @@ public enum MusicClassification {
     MusicClassification(int musicCode, String description) {
         this.musicCode = musicCode;
         this.description = description;
+    }
+
+    public int getMusicCode() {
+        return musicCode;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+    public static MusicClassification getClassificationByCode(int recordCode){
+        return Arrays.stream(MusicClassification.values())
+                .filter(c->c.getMusicCode()==recordCode)
+                .findFirst().orElse(null);
     }
 }

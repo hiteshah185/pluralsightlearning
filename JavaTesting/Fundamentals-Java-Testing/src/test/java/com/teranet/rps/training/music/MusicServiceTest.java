@@ -4,6 +4,7 @@ import com.teranet.rps.training.music.database.MusicRecord;
 import com.teranet.rps.training.music.database.MusicSource;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -23,6 +24,17 @@ public class MusicServiceTest implements MusicSource {
         assertNotNull(releasedMusicList);
         assertEquals(1,releasedMusicList.size(),()->"One Music starting with 'po' - Pop Sensations should return from test data.");
         assertEquals("Pop Sensations",releasedMusicList.get(0).musicName());
+    }
+    @Nested
+    @DisplayName("Throws an illegal argument")
+    class ThrowsExceptionTests{
+        @Test
+        @DisplayName("When passed a blank string")
+        void throwsExceptionOnBlank(){
+            Exception thrown = assertThrows(IllegalArgumentException.class,
+                    ()->musicService.findMusicStartingWith(" "));
+            System.out.println(thrown.getMessage());
+        }
     }
 
 

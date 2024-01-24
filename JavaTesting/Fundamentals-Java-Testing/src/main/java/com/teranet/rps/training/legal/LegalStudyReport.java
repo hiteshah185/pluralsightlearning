@@ -15,7 +15,7 @@ public class LegalStudyReport {
     public void showReport(){
         printStream.printf("\nLegal Report generated on:%s\n%n", LocalDate.now());
         printTable("Cases by Court",legalResearchAnalyser.getCourtNames());
-        printTable("Cases by Judges",legalResearchAnalyser.getCourtNames());
+        printTable("Cases by Judges",legalResearchAnalyser.getJudgeNames());
     }
     private void printTable(String title, Map<String,Long> values){
         printStream.printf("---------------%s---------------",title);
